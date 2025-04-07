@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "privacy switch",
+  "version": "1.0",
+  "description": "Instantly control your browsing history for enhanced privacy.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icons": {
+      "16": "icons/privacySwitch16.png",
+      "32": "icons/privacySwitch32.png",
+      "48": "icons/privacySwitch48.png",
+      "128": "icons/privacySwitch128.png"
+    }
+  },
+  "permissions": ["history", "scripting", "tabs", "storage", "webNavigation"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/privacySwitch16.png",
+    "32": "icons/privacySwitch32.png",
+    "48": "icons/privacySwitch48.png",
+    "128": "icons/privacySwitch128.png"
+  }
+}
